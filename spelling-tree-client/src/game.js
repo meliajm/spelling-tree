@@ -12,5 +12,13 @@ class Game {
     save() {
         Game.all.push(this)
     }
-    
+
+    static loadGame(id) {
+        API.get(`/games/${id}`)
+        .then(function(gameData) {
+            console.log('load game')
+            console.log(gameData)
+        })
+    }
+
 }

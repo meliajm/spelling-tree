@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    Game.loadGame()
+    Game.loadGame(1)
 
-    
+
 })
