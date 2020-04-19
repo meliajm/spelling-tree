@@ -1,14 +1,14 @@
 class API {
 
-    static baseUrl = 'http://localhost:3000'
-
+    static baseUrl = 'https://fierce-basin-15916.herokuapp.com'
+    
     static headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
     }
 
     static options = {
-    //    credentials
+        credentials: "include"
     }
 
     static get(url) {
