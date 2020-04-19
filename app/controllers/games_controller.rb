@@ -9,7 +9,7 @@ class GamesController < ApplicationController
     #GET/games/1
     def show
       set_game
-      render json: @game
+      render json: @game, include: [:letters]
     end #show
 
     private

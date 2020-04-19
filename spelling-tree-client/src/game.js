@@ -17,7 +17,7 @@ class Game {
         API.get(`/games/${id}`)
         .then(function(gameData) {
             console.log('load game')
-            console.log(gameData)
+            console.log(gameData.letters)
         })
     }
 
